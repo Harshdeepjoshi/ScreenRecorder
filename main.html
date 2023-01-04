@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Screen Recorder</title>
+    <style>
+      body {
+        padding: 20px;
+      }
+      body {
+        font-size: 16px;
+        font-family: "Arial", sans-serif;
+        color: #333;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Georgia", serif;
+        color: #222;
+      }
+      h1 {
+        font-size: 32px;
+        margin: 20px 0;
+      }
+      h2 {
+        font-size: 24px;
+        margin: 20px 0;
+      }
+      h3 {
+        font-size: 18px;
+        margin: 20px 0;
+      }
+      button {
+        border: none;
+        background-color: #0366d6;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 14px;
+        margin: 2px;
+        cursor: pointer;
+        border: #000;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 15px;
+        flex: 1;
+      }
+      button:disabled{
+        opacity: .5;
+      }
+
+      button:hover {
+        background-color: #0353c9;
+      }
+      video {
+        height: 70%;
+        width: 70%;
+        border: 1px solid #333;
+        position: relative;
+      }
+      .resize-handle {
+        width: 20px;
+        height: 20px;
+        background-color: #ccc;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        cursor: se-resize;
+      }
+
+      .resize-handle:hover {
+        background-color: #bbb;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Screen Recorder</h1>
+    <video autoplay></video>
+    <div>
+      <button id="start-button">Start recording</button>
+      <button id="stop-button" disabled>Stop recording</button>
+      </button> 
+    </div>
+    <div id="duration">Press Start Recording To record
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
